@@ -18,6 +18,8 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
+            $table->integer('loyalty_points')->default(0);
+            $table->foreignId('loyalty_level_id')->references('id')->on('loyalty_levels');
             $table->timestamps();
         });
 
