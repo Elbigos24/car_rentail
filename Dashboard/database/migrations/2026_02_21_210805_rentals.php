@@ -16,8 +16,6 @@ return new class extends Migration
             $table->foreignId('user_id')->references('id')->on('users');
             $table->foreignId('car_id')->references('id')->on('cars');
             $table->foreignId('driver_id')->references('id')->on('drivers');
-
-
             $table->date('pickup_date');
             $table->date('return_date');
             $table->integer('total_amount');
