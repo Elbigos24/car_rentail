@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use App\Models\Rentail;
 
 class RentalsSeeder extends Seeder
 {
@@ -26,5 +27,14 @@ class RentalsSeeder extends Seeder
             ],
             
         ]);
+        $rental = new Rentail();
+        $rental->user_id = 2;
+        $rental->car_id = 2;
+        $rental->driver_id = 2;
+        $rental->pickup_date = '2024-08-01';
+        $rental->return_date = '2024-08-05';
+        $rental->total_amount = 300;
+        $rental->status = 'pending';
+        $rental->save();
     }
 }

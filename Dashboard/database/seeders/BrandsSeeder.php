@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use App\Models\Brand;
 
 class BrandsSeeder extends Seeder
 {
@@ -20,5 +21,12 @@ class BrandsSeeder extends Seeder
             'created_at'=>date('Y-m-d H:i:s'),
             'updated_at'=>date('Y-m-d H:i:s'),
         ]);
+        $dato1 = new Brand();
+        $dato1->id = 2;
+        $dato1->name = 'Honda';
+        $dato1->img = 'imagen';
+        $dato1->created_at = date('Y-m-d H:i:s');
+        $dato1->updated_at = date('Y-m-d H:i:s');
+        $dato1->save();
     }
 }
