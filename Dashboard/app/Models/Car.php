@@ -21,4 +21,10 @@ class Car extends Model
         'daly_rate',
         'status'
     ];
+    public function brand()
+    {
+        return $this->belongsTo(Brand::class);
+    }
+    
+    
 }

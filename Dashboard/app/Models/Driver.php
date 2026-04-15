@@ -13,4 +13,12 @@ class Driver extends Model
         'licence_number',
         'img',
     ];
+    public function order()
+    {
+        return $this->belongsTo(Rentail::class, 'order_id');
+    }
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
 }

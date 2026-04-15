@@ -14,4 +14,8 @@ class Payment extends Model
         'payment_method',
         'status',
     ];
+    public function rental()
+    {
+        return $this->belongsTo(Rentail::class);
+    }
 }

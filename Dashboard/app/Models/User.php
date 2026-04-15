@@ -25,6 +25,10 @@ class User extends Authenticatable
         'loyalty_points',
         'loyalty_level_id',
     ];
+    public function loyaltyLevel()
+    {
+        return $this->belongsTo(LoyaltyLevel::class);
+    }
 
     /**
      * The attributes that should be hidden for serialization.
