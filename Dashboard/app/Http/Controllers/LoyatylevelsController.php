@@ -31,7 +31,7 @@ class LoyatylevelsController extends Controller
      */
     public function store(Request $request)
     {
-        $loyaltyLevel = LoyaltyLevel::create([
+        $loyaltyLevel = LoyaltyLevel::validate([
             'name' => '$request->name',
             'min_points' => '$request->min_points',
             'discount_percentage' => '$request->discount_percentage',
