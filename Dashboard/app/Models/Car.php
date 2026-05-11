@@ -12,6 +12,8 @@ class Car extends Model
         'models',
         'year',
         'color',
+        'img',
+        'price',
         'licence_plate',
         'mileage',
         'lat',

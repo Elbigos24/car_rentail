@@ -33,18 +33,10 @@ export default function MapPanel() {
                     </div>
 
                     {/* Mock map elements (route and pins) */}
-                    <svg className="position-absolute w-100 h-100 top-0 start-0 pointer-events-none z-0">
-                        {/* Simulated Route Line */}
-                        <path d="M 280 480 L 320 450 L 370 460 L 450 380 L 520 390 L 580 250 L 680 280 L 720 220"
-                            stroke="#1a1a1a" stroke-width="4" fill="none" stroke-linejoin="round"
-                            stroke-linecap="round" />
-                    </svg>
+                    
 
                     {/* Route start and end markers */}
-                    <div className="position-absolute bg-success rounded-circle border border-white border-2 z-1 shadow"
-                        style={{ width: "14px", height: "14px", top: "473px", left: "273px" }}></div>
-                    <div className="position-absolute bg-dark rounded-circle border border-white border-2 z-1 shadow"
-                        style={{ width: "18px", height: "18px", top: "211px", left: "711px" }}></div>
+
 
                     {/* Time indicator on route */}
                     <div className="position-absolute bg-white px-2 py-1 rounded-pill shadow-sm text-dark fs-xs fw-bold z-1 d-flex align-items-center gap-1 border"
@@ -53,10 +45,7 @@ export default function MapPanel() {
                     </div>
 
                     {/* Numbered dark pins */}
-                    <div className="map-pin-dark" style={{ top: "25%", left: "20%" }}>2</div>
-                    <div className="map-pin-dark" style={{ top: "75%", left: "35%" }}>3</div>
-                    <div className="map-pin-dark" style={{ bottom: "10%", right: "20%" }}>5</div>
-                    <div className="map-pin-dark" style={{ top: "20%", right: "10%" }}>6</div>
+
 
                     {/* Car icons on map */}
                     <div className="position-absolute" style={{ top: "520px", left: "280px", transform: "rotate(15deg)" }}>

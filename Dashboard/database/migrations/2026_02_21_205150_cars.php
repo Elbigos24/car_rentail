@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('models');
             $table->integer('year');   
             $table->string('color');
+            $table->string('img',100);
+            $table->decimal('price', 10, 2);
             $table->string('licence_plate', 10)->unique();
             $table->integer('mileage');
             $table->integer('lat');

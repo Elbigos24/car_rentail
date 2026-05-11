@@ -4,6 +4,8 @@ export default interface Car {
     models:string,
     year:string,
     color:string,
+    img:string,
+    price:number,
     licence_plate:string,
     mileage:number,
     lat:number,

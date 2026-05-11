@@ -20,6 +20,8 @@ class CarsSeeder extends Seeder
             'models'=>'Corolla',
             'year'=>2020,
             'color'=>'Red',
+            'img'=>'car.jpg',
+            'price'=>35.00,
             'licence_plate'=>'ABC123',
             'mileage'=>15000,
             'lat'=>40.7128,
@@ -37,6 +39,8 @@ class CarsSeeder extends Seeder
         $dato1->models = 'Civic';
         $dato1->year = 2019;
         $dato1->color = 'Blue';
+        $dato1->img = 'car2.jpg';
+        $dato1->price = 20.00;
         $dato1->licence_plate = 'XYZ789';
         $dato1->mileage = 20000;
         $dato1->lat = 34.0522;
